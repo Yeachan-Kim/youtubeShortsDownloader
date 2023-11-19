@@ -5,7 +5,7 @@ import ffmpeg
 import os
 
 
-# 판매용 프로그램 만들때 이부분 어캐 처리할지 생각해봐야함
+#구글 api를 사용하는 버전으로 credentials 필요
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "credentials.json"
 
 
@@ -174,12 +174,3 @@ btn1 = Button(tk, text="다운로드 시작", bg="black", fg="white", command=st
 btn1.grid(row=5, column=1)
 
 tk.mainloop()
-
-# 쇼츠만 구분해서 다운받는 프로그램 만들기 -> OK
-# gui 프로그램으로 만들어서 쓰기 쉽게 만들기 -> ok
-# 채널 아이디 배열로 만들고 for문 돌리기 -> ok
-# 판매용 프로그램으로 전환하기(api 넣는 방식, ffmpeg) -> ok
-
-# 폴더명을 채널명으로 바꾸기
-
-# i= 0 to i =99 해서 100개 넘어가면 다음 채널 id로 넘어가게 세팅
